@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav_bar {
+  height: 100px;
+  width: 100%;
+}
+.nav_bar ul {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.nav_bar ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 0 20px;
+  font-size: 20px;
+}
+.nav_bar ul li a:hover {
+  color: #FF6464;
+  transition: 0.3s;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+main span {
+  font-family: Heebo;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 60px;
+  text-align: left;
+  color: #fff;
+  background-color: #FF6464;
+  border-radius: 20px;
+  padding: 0px 10px;
+}
+main .p_title {
+  font-family: Heebo;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 49.94px;
+  text-align: left;
+}
+main .p_title1 {
+  display: inline-block;
+  margin-left: 10px;
+  font-family: Heebo;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 29.38px;
+  text-align: left;
+}
+main .p_title2 {
+  font-family: Heebo;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.5px;
+  text-align: left;
+}
+main .p_title2_2 {
+  width: 683px;
+}
+
+.img_1 {
+  width: 681px;
+  height: 460px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.heading .wrapper2 {
+  width: 690px;
+  display: block;
+  justify-content: center;
+}
+.heading .img_2 {
+  width: 681px;
+  height: 460px;
+}
+
+footer {
+  height: 100px;
+  text-align: center;
+}
+footer .icon {
+  text-align: center;
+  gap: 20px;
+}
+footer .icon i {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .nav_bar ul {
+    flex-direction: column;
+    display: none;
+  }
+  .nav_bar ul li {
+    margin-bottom: 10px;
+  }
+  .nav_bar ul li a {
+    display: block;
+    text-align: center;
+  }
+  .nav_bar ul li a:hover {
+    color: #9b8585;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .nav_bar .fa-solid {
+    display: block;
+    cursor: pointer;
+  }
+  input[type=checkbox]:checked + .menu_bar {
+    transform: translateX(0);
+    transition: 1s;
+  }
+  .heading .img_2 {
+    width: 200px;
+    height: 120px;
+  }
+}/*# sourceMappingURL=style.css.map */
